@@ -1,17 +1,13 @@
 ---
+import Layout from '@/layouts/Layout.astro';
+
 const { frontmatter } = Astro.props;
 ---
 
-<html>
-  <!-- ... -->
-  <h1>{frontmatter.title}</h1>
-  <h2>Post author: {frontmatter.author}</h2>
-  <p>{frontmatter.description}</p>
+<Layout title={frontmatter.title}>
   <div class="prose mx-auto">
+    <h1>{frontmatter.title}</h1>
+    <h2>Post author: {frontmatter.author}</h2>
     <slot />
   </div>
-  <!-- Markdown 콘텐츠가 여기에 삽입됩니다. -->
-  <!-- ... -->
-
-
-</html>
+</Layout>
