@@ -1,0 +1,17 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<html>
+  <!-- ... -->
+  <h1>{frontmatter.title}</h1>
+  <h2>Post author: {frontmatter.author}</h2>
+  <p>{frontmatter.description}</p>
+  <div class="prose mx-auto">
+    <slot />
+  </div>
+  <!-- Markdown 콘텐츠가 여기에 삽입됩니다. -->
+  <!-- ... -->
+
+
+</html>
