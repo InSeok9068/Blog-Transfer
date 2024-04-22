@@ -1,0 +1,15 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getTitle } from '@/utils/package';
+import BlogList from '@/components/blog/BlogList.astro';
+
+const allPosts = await getCollection('posts');
+---
+
+<Layout title={getTitle()}>
+  <div class="flex flex-col items-center gap-10">
+    <p class="font-mono text-3xl">Blog List</p>
+    {allPosts.map((post) => <BlogList title={post.data.title} url={`/posts/${post.slug}/`} />)}
+  </div>
+</Layout>
