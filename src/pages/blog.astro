@@ -1,0 +1,14 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PostLayout from '@/layouts/PostLayout.astro';
+import { getCollection } from 'astro:content';
+import { getTitle } from '@/utils/package';
+
+const allPosts = await getCollection('posts');
+---
+
+<Layout title={getTitle()}>
+  <ul>
+    {allPosts.map((post) => <PostLayout frontmatter={post.data} />)}
+  </ul>
+</Layout>
