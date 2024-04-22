@@ -13,7 +13,7 @@ const { title, image, url } = Astro.props;
 
 <div class="card bg-base-100 shadow-xl lg:card-side">
   <figure>
-    <Image src={defaultBlogImage} alt="Album" width="200" height="200" />
+    <Image src={image ?? defaultBlogImage} alt="Album" width="200" height="200" />
   </figure>
   <div class="card-body">
     <a href={url}>
