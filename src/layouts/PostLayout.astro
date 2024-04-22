@@ -5,9 +5,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <div class="prose mx-auto">
+  <div class="prose mx-auto max-w-5xl">
     <h1>{frontmatter.title}</h1>
-    <h2>Post author: {frontmatter.author}</h2>
     <slot />
   </div>
 </Layout>
