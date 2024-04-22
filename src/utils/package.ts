@@ -1,5 +1,5 @@
 import { title } from '../../package.json';
 
-const getTitle = () => title;
+const getPackageTitle = () => title;
 
-export { getTitle };
+export { getPackageTitle };
