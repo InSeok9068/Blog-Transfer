@@ -1,8 +1,8 @@
 ---
-title: "[SpringBoot] RestTemplate 이용하여 API 통신하기"
-categories: 
+title: '[SpringBoot] RestTemplate 이용하여 API 통신하기'
+categories:
   - SpringBoot
-tags : 
+tags:
   - RestTemplate
 ---
 
@@ -56,7 +56,7 @@ public class RestTemplateMain {
 
 ### Get 통신
 
-**GET	/comments?postId=1 참고**
+**GET /comments?postId=1 참고**
 
 ```java
 public class RestTemplateMain {
@@ -95,7 +95,7 @@ public class RestTemplateMain {
 }
 ```
 
-여기서 하나 알아두면 좋은건 restTemplate의 exchage의 4번째 파라미터  **Class<Map> responseType**의 대해서이다.
+여기서 하나 알아두면 좋은건 restTemplate의 exchage의 4번째 파라미터 **Class<Map> responseType**의 대해서이다.
 
 만약의 기존의 방식이라면 Response Type Class에 대해서 단편적으로 선언하여 사용한다.
 
@@ -212,10 +212,10 @@ Map.class를 이용하여 작업하였다.
 
 ```json
 {
-  id: 101,
-  title: 'Rest',
-  body: 'Teamplte',
-  userId: 1
+  "id": 101,
+  "title": "Rest",
+  "body": "Teamplte",
+  "userId": 1
 }
 ```
 

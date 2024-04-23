@@ -1,6 +1,6 @@
 ---
-title: "[Eclipse] 영역 복사 단축키"
-categories: 
+title: '[Eclipse] 영역 복사 단축키'
+categories:
   - Eclipse
 ---
 

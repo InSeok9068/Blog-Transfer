@@ -1,6 +1,6 @@
 ---
-title: "[Eclipse] Console창 Buffer 사이즈 변경"
-categories: 
+title: '[Eclipse] Console창 Buffer 사이즈 변경'
+categories:
   - Eclipse
 ---
 

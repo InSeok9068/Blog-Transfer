@@ -1,8 +1,8 @@
 ---
-title: "[Javasciprt] 리스트 내림차순, 오름차순 정렬"
-categories: 
+title: '[Javasciprt] 리스트 내림차순, 오름차순 정렬'
+categories:
   - Javascript
-tags : 
+tags:
   - sort
   - reverse
 ---

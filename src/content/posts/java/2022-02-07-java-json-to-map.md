@@ -1,5 +1,5 @@
 ---
-title: "[Java] 객체 혹은 JSON String Map으로 변환"
+title: '[Java] 객체 혹은 JSON String Map으로 변환'
 categories:
   - Java
 tags:

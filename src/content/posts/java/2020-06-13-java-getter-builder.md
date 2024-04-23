@@ -1,8 +1,8 @@
 ---
-title: "[Java] @Data를 지양하고 @Builder를 지향하자"
-categories: 
+title: '[Java] @Data를 지양하고 @Builder를 지향하자'
+categories:
   - Java
-tags : 
+tags:
   - Data
   - Builder
 ---

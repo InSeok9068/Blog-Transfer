@@ -1,8 +1,8 @@
 ---
-title: "[React] React 프로젝트 create-react-app로 시작하기"
-categories: 
+title: '[React] React 프로젝트 create-react-app로 시작하기'
+categories:
   - React
-tags : 
+tags:
   - create-react-app
 ---
 
@@ -40,7 +40,7 @@ npm start
 
 올바르게 서버가 올라갔다. 이제 다른건 신경쓰지말고 오직 React에만 집중해서 코딩을 하면 된다.<br>
 
-작업이 완료되면 테스트도 실시할수 있고, 빌드를 해서 배포준비까지 진행 할 수 있다. 
+작업이 완료되면 테스트도 실시할수 있고, 빌드를 해서 배포준비까지 진행 할 수 있다.
 
 ```
 // 테스트모드로 실행합니다.

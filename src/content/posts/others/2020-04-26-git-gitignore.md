@@ -1,8 +1,8 @@
 ---
-title: "[Git] .gitignore 간편하게 설정하기"
-categories: 
+title: '[Git] .gitignore 간편하게 설정하기'
+categories:
   - Others
-tags : 
+tags:
   - git
   - gitignore
 ---
@@ -31,7 +31,7 @@ tags :
 
 위의 링크를 따라가 보면 아래와 같은 페이지가 나오는데
 
-해당 검색란에 내가 사용하는 언어들은 입력한뒤 생성을 누르면 
+해당 검색란에 내가 사용하는 언어들은 입력한뒤 생성을 누르면
 
 자동으로 **.gitingore** 파일 텍스트가 생성된다.
 

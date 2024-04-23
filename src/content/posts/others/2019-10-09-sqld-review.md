@@ -1,8 +1,8 @@
 ---
-title: "SQLD합격 후기"
-categories: 
+title: 'SQLD합격 후기'
+categories:
   - Others
-tags : 
+tags:
   - sqld
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "[Javasciprt] 콜백 지옥의 해결방법 Promise"
-categories: 
+title: '[Javasciprt] 콜백 지옥의 해결방법 Promise'
+categories:
   - Javascript
 tag:
   - promise
@@ -42,7 +42,7 @@ let applePrice = 100;
 
 //비동기 통신을 구현하기 위해 setTimeOut으로 표현
 const process1 = () => {
-  setTimeout(function() {
+  setTimeout(function () {
     applePrice += 100;
   }, 3000);
 };
@@ -66,10 +66,10 @@ process2();
 지금은 몇개의 프로세스가 없어서 오히려 더 복잡해 보일수있지만 프로세스가 방대해지다보면 코드 가독성이 훨씬 뛰어나서 작업하기 수월해질것이다.
 
 ```js
-const process1 = isTrue => {
-  return new Promise(function(reslove, reject) {
+const process1 = (isTrue) => {
+  return new Promise(function (reslove, reject) {
     if (isTrue) {
-      setTimeout(function() {
+      setTimeout(function () {
         applePrice += 100;
         reslove(applePrice);
       }, 2000);
@@ -81,19 +81,15 @@ const process1 = isTrue => {
 
 const process2 = () => console.log(applePrice * 2);
 
-const errorCatch = () => console.log("Error");
+const errorCatch = () => console.log('Error');
 
 // 작업이 성공
-process1(true)
-  .then(process2)
-  .catch(errorCatch);
+process1(true).then(process2).catch(errorCatch);
 
 //400
 
 // 작업이 실패
-process1(false)
-  .then(process2)
-  .catch(errorCatch);
+process1(false).then(process2).catch(errorCatch);
 
 //Error
 ```

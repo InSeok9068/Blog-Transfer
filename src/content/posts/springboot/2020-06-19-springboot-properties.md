@@ -1,8 +1,8 @@
 ---
-title: "[SpringBoot] properties값 클래스로 매핑하기"
-categories: 
+title: '[SpringBoot] properties값 클래스로 매핑하기'
+categories:
   - SpringBoot
-tags : 
+tags:
   - Properties
   - ConfigurationProperties
 ---
@@ -22,7 +22,7 @@ config.test3=1.5
 
 ```java
 public Class ConfigSetting {
-  
+
     @Value(${config.test1})
     private String test1
 
@@ -77,8 +77,8 @@ public class Config {
 
 - **@ConfigurationProperties** : prefix에 매핑할 properties 값을 적어준다.
 - **@Data** : 스프링 부트가 시작될 때 해당 클래스에 properties 값을 매핑 시켜줄 때 <br>
-Setter 메 서드가 필요함과 동시에 추후 데이터를 꺼낼 것을 대비하여 **@Data**를 선언하여 준다.<br>
-**&#42; Lombok 라이브러리가 없으면 Getter와 Setter 메서드를 따로 구현해 준다.**
+  Setter 메 서드가 필요함과 동시에 추후 데이터를 꺼낼 것을 대비하여 **@Data**를 선언하여 준다.<br>
+  **\* Lombok 라이브러리가 없으면 Getter와 Setter 메서드를 따로 구현해 준다.**
 - **@Component** : 해당 클래스를 빈으로 등록해 준다.
 
 **※ 이제 여기서 @EnableConfigurationProperties를 사용하여 @ConfigurationProperties 사용을 명시해 주어야 하지만**

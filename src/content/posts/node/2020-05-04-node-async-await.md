@@ -1,11 +1,11 @@
 ---
-title: "[Node] Async/Await로 동기 통신하기"
-categories: 
+title: '[Node] Async/Await로 동기 통신하기'
+categories:
   - Node
-tags : 
+tags:
   - Async
   - Await
-published : false
+published: false
 ---
 
 자바스크립트로 코딩을 하다 보면 **Ajax**를 이용해서 코딩을 자주 하게 된다.

@@ -1,8 +1,8 @@
 ---
-title: "[Java] 문자열 연결 3가지 방법"
-categories: 
+title: '[Java] 문자열 연결 3가지 방법'
+categories:
   - Java
-tags : 
+tags:
   - +
   - String.format
   - StringBuilder
@@ -17,6 +17,7 @@ tags :
 개인적으로 느낀 장단점이니 오해하지 않길 바란다.
 
 ### **'+' 연산자 사용**
+
 ```java
 String str = "";
 String name = "홍길동";
@@ -25,12 +26,13 @@ str = "안녕하세요 " + name + " 입니다";
 System.out.println(str);
 ```
 
-* 장점 : 가장 보편적이며 준수한 성능을 나타낸다.
-* 단점 : 문자열이 길어질수록 가독성이 떨어진다.
+- 장점 : 가장 보편적이며 준수한 성능을 나타낸다.
+- 단점 : 문자열이 길어질수록 가독성이 떨어진다.
 
 ---
 
 ### **String클래스 format()메소드 사용**
+
 ```java
 String str = "";
 String name = "홍길동";
@@ -39,12 +41,13 @@ str = String.format("안녕하세요 %s 입니다", name);
 System.out.println(str);
 ```
 
-* 장점 : 가독성이 뛰어나다.
-* 단점 : 성능이 좋지 못하다.
+- 장점 : 가독성이 뛰어나다.
+- 단점 : 성능이 좋지 못하다.
 
 ---
 
 ### **StringBuilder클래스 append()메소드 사용**
+
 ```java
 String str = "";
 String name = "홍길동";
@@ -53,8 +56,8 @@ str = new StringBuilder().append("안녕하세요 ").append(name).append(" 입�
 System.out.println(str);
 ```
 
-* 장점 : 가장 보편적이며 준수한 성능을 나타낸다.
-* 단점 : 가독성이 떨어지며 코드가 지져분해질수 있다.
+- 장점 : 가장 보편적이며 준수한 성능을 나타낸다.
+- 단점 : 가독성이 떨어지며 코드가 지져분해질수 있다.
 
 이렇게 간단하게나마 3가지 방법으로 문자열을 연결하는 방법을 알아봤다.
 

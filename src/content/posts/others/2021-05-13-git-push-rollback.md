@@ -1,5 +1,5 @@
 ---
-title: "[Git] Push 되돌리기 및 Git 실수 되돌리기"
+title: '[Git] Push 되돌리기 및 Git 실수 되돌리기'
 categories:
   - Others
 tags:

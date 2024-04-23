@@ -1,8 +1,8 @@
 ---
-title: "[Java] @Slf4j를 사용하여 편하게 로그찍기"
-categories: 
+title: '[Java] @Slf4j를 사용하여 편하게 로그찍기'
+categories:
   - Java
-tags : 
+tags:
   - Lombok
   - Slf4j
 ---
@@ -12,18 +12,18 @@ tags :
 일단 나도 가끔씩 헷갈리는 Log 레벨에 대해서 먼저 한번 테이블을 형태로 알아보도록 하자.
 
 |       | Trace | Debug | Info | Warn | Error |
-|:-----:|:-----:|:-----:|:----:|:----:|:-----:|
-| Trace |   O   |   O   |   O  |   O  |   O   |
-| Debug |   X   |   O   |   O  |   O  |   O   |
-| Info  |   X   |   X   |   O  |   O  |   O   |
-| Warn  |   X   |   X   |   X  |   O  |   O   |
-| Error |   X   |   X   |   X  |   X  |   O   |
+| :---: | :---: | :---: | :--: | :--: | :---: |
+| Trace |   O   |   O   |  O   |  O   |   O   |
+| Debug |   X   |   O   |  O   |  O   |   O   |
+| Info  |   X   |   X   |  O   |  O   |   O   |
+| Warn  |   X   |   X   |  X   |  O   |   O   |
+| Error |   X   |   X   |  X   |  X   |   O   |
 
 - TRACE : 추적 레벨은 Debug보다 좀더 상세한 정보를 나타냄
 - DEBUG : 프로그램을 디버깅하기 위한 정보 지정
-- INFO :  상태변경과 같은 정보성 메시지를 나타냄
-- WARN :  처리 가능한 문제, 향후 시스템 에러의 원인이 될 수 있는 경고성 메시지를 나타냄
-- ERROR :  요청을 처리하는 중 문제가 발생한 경우
+- INFO : 상태변경과 같은 정보성 메시지를 나타냄
+- WARN : 처리 가능한 문제, 향후 시스템 에러의 원인이 될 수 있는 경고성 메시지를 나타냄
+- ERROR : 요청을 처리하는 중 문제가 발생한 경우
 
 일단 우리가 평소에 쓰는 클래스 변수로 선언하여 쓰는방식에 대해서 먼저 봐보겠다.
 
@@ -41,6 +41,7 @@ public class Slf4jSample {
 ```
 
 #### Console
+
 ```console
 20200616 15:03:00.675 [main] INFO b.Slf4jSample - ---------- Log 테스트 ---------
 ```
@@ -61,6 +62,7 @@ public class Slf4jSample {
 ```
 
 #### Console
+
 ```console
 20200616 15:03:00.675 [main] INFO b.Slf4jSample - ---------- Log 테스트 ---------
 ```

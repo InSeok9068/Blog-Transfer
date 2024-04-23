@@ -1,8 +1,8 @@
 ---
-title: "[Java] NullPointException 예방 toString보단 valueOf를 사용하자"
-categories: 
+title: '[Java] NullPointException 예방 toString보단 valueOf를 사용하자'
+categories:
   - Java
-tags : 
+tags:
   - NullPointException
   - toString
   - valueOf
@@ -41,7 +41,7 @@ public static void main(String[] args) {
   // 1번
   // 1
   // 에러 발생
-  
+
 }
 ```
 
@@ -64,7 +64,7 @@ public static void main(String[] args) {
   // 1번
   // 1
   // null
-  
+
 }
 ```
 

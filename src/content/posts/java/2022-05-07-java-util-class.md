@@ -1,5 +1,5 @@
 ---
-title: "[Java] 유용한 Util 클래스"
+title: '[Java] 유용한 Util 클래스'
 categories:
   - Java
 tags:

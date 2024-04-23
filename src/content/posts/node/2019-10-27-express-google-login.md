@@ -1,5 +1,5 @@
 ---
-title: "[Node] Exprees 서버 Google 소셜 로그인"
+title: '[Node] Exprees 서버 Google 소셜 로그인'
 categories:
   - Node
 tags:
@@ -130,12 +130,12 @@ app.js는 수정하여 준다.
 #### new.js
 
 ```js
-var express = require("express");
+var express = require('express');
 var router = express.Router();
 
 /* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.render("new");
+router.get('/', function (req, res, next) {
+  res.render('new');
 });
 
 module.exports = router;
@@ -144,10 +144,10 @@ module.exports = router;
 #### login.js
 
 ```js
-const express = require("express");
-const passport = require("passport");
-const GoogleStrategy = require("passport-google-oauth20").Strategy;
-const google = require("../google.json");
+const express = require('express');
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const google = require('../google.json');
 
 const router = express.Router();
 
@@ -171,29 +171,25 @@ passport.use(
         const user = profile;
         return done(null, user);
       });
-    }
-  )
+    },
+  ),
 );
 
 /* GET home page. */
-router.get("/", (req, res) => {
-  res.render("login");
+router.get('/', (req, res) => {
+  res.render('login');
 });
 
-router.get("/logout", (req, res) => {
+router.get('/logout', (req, res) => {
   req.logout();
-  res.redirect("/");
+  res.redirect('/');
 });
 
-router.get("/google", passport.authenticate("google", { scope: ["profile"] }));
+router.get('/google', passport.authenticate('google', { scope: ['profile'] }));
 
-router.get(
-  "/google/callback",
-  passport.authenticate("google", { failureRedirect: "/login" }),
-  (req, res) => {
-    res.redirect("/");
-  }
-);
+router.get('/google/callback', passport.authenticate('google', { failureRedirect: '/login' }), (req, res) => {
+  res.redirect('/');
+});
 
 module.exports = router;
 ```
@@ -201,38 +197,38 @@ module.exports = router;
 #### app.js
 
 ```js
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var session = require("express-session");
-var passport = require("passport");
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var session = require('express-session');
+var passport = require('passport');
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var loginRouter = require("./routes/login");
-var newRouter = require("./routes/new");
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/login');
+var newRouter = require('./routes/new');
 
 var app = express();
 
 // view engine setup
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
-app.use(logger("dev"));
+app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
   session({
-    secret: "key",
+    secret: 'key',
     cookie: { maxAge: 60 * 60 * 1000 },
     resave: false,
     saveUninitialized: true,
-  })
+  }),
 );
 
 app.use(passport.initialize());
@@ -242,14 +238,14 @@ const authenticateUser = (req, res, next) => {
   if (req.isAuthenticated()) {
     next();
   } else {
-    res.status(301).redirect("/login");
+    res.status(301).redirect('/login');
   }
 };
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
-app.use("/login", loginRouter);
-app.use("/new", authenticateUser, newRouter);
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/login', loginRouter);
+app.use('/new', authenticateUser, newRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -260,11 +256,11 @@ app.use(function (req, res, next) {
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
   res.status(err.status || 500);
-  res.render("error");
+  res.render('error');
 });
 
 module.exports = app;

@@ -1,10 +1,10 @@
 ---
-title: "[Linux] kill -9보단 -15 사용하자"
-categories: 
+title: '[Linux] kill -9보단 -15 사용하자'
+categories:
   - Linux
-tags : 
+tags:
   - Tomcat
-  - kill  
+  - kill
 ---
 
 리눅스 환경에서 서버를 시작하고 종료할 때 우리는 Tomcat의 **startup.sh, shut down.sh** 등을 쉘을 실행시켜

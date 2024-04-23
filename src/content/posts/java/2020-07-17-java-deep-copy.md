@@ -1,8 +1,8 @@
 ---
-title: "[Java] Gson 라이브러리를 통해 객체 DeepCopy 구현하기"
-categories: 
+title: '[Java] Gson 라이브러리를 통해 객체 DeepCopy 구현하기'
+categories:
   - Java
-tags : 
+tags:
   - Gson
   - DeepCopy
   - Serialization

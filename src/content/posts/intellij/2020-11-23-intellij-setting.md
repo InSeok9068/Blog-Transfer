@@ -1,5 +1,5 @@
 ---
-title: "[IntelliJ] 여러가지 초기 세팅"
+title: '[IntelliJ] 여러가지 초기 세팅'
 categories:
   - IntelliJ
 ---

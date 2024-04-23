@@ -1,8 +1,8 @@
 ---
-title: "[Oracle] 커밋한 데이터한 복구 방법"
-categories: 
+title: '[Oracle] 커밋한 데이터한 복구 방법'
+categories:
   - Oracle
-tag :
+tag:
   - commit
 ---
 
@@ -13,18 +13,20 @@ tag :
 Oracle에는 Commit를 하였을때 임시로 데이터를 저장하게 되어있으며 그 데이터를 활용하여 데이터를 복구 시킬수 있다.
 
 #### 15분 전의 테이블의 데이터 조회
+
 ```sql
-SELECT * 
+SELECT *
   FROM 테이블명
-    AS OF TIMESTAMP(SYSTIMESTAMP-INTERVAL '15' MINUTE); 
- ```
+    AS OF TIMESTAMP(SYSTIMESTAMP-INTERVAL '15' MINUTE);
+```
 
 #### 15분 전의 테이블 데이터 조회 후 해당 테이블에 INSERT
+
 ```sql
 INSERT INTO 테이블명
 SELECT *
 FROM 테이블명
-  AS OF TIMESTAMP(SYSTIMESTAMP-INTERVAL '15' MINUTE);  
+  AS OF TIMESTAMP(SYSTIMESTAMP-INTERVAL '15' MINUTE);
 ```
 
 이러한 방법으로 테이블의 데이터를 복구 시킬 수 있다.

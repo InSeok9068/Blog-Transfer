@@ -1,8 +1,8 @@
 ---
-title: "[Java] Private 변수 Getter Setter 메소드 자동 완성"
-categories: 
+title: '[Java] Private 변수 Getter Setter 메소드 자동 완성'
+categories:
   - Java
-tags : 
+tags:
   - eclipse
 ---
 
@@ -14,11 +14,11 @@ private를 사용하게 되면 변수를 접근 하는데 Get 메소드와 Set �
 
 ```java
 public class TEST_CLASS {
-	
+
 	private int num;
-	
+
 	private String text;
-	
+
 }
 
 ```
@@ -31,9 +31,9 @@ public class TEST_CLASS {
 
 ```java
 public class TEST_CLASS {
-	
+
 	private int num;
-	
+
 	private String text;
 
 	public int getNum() {
@@ -51,6 +51,6 @@ public class TEST_CLASS {
 	public void setText(String text) {
 		this.text = text;
 	}
-	
+
 }
 ```

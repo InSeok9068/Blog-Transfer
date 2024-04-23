@@ -1,9 +1,9 @@
 ---
-title: "[Linux] Apache 기본적인 명령어"
-categories: 
+title: '[Linux] Apache 기본적인 명령어'
+categories:
   - Linux
-tags : 
-  - Apache  
+tags:
+  - Apache
 ---
 
 ### 1. Apache 버전 확인

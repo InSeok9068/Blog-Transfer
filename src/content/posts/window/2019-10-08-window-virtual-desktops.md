@@ -1,6 +1,6 @@
 ---
-title: "[Window] Window 10 가상 데스크탑 단축키"
-categories: 
+title: '[Window] Window 10 가상 데스크탑 단축키'
+categories:
   - Window
 ---
 
@@ -12,10 +12,13 @@ categories:
 나누어서 작업하는데 사용하고 있다.
 
 #### 생성
+
 **Ctrl + Window Key + D**
 
 #### 종료
+
 **Ctrl + Window Key + F4**
 
 #### 가상 데스크탑 간의 이동 (좌 우)
+
 **Ctrl + Window Key + <-, ->**

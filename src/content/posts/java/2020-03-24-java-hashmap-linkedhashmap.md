@@ -1,8 +1,8 @@
 ---
-title: "[Java] HashMap과 LinkedHashMap의 차이점"
-categories: 
+title: '[Java] HashMap과 LinkedHashMap의 차이점'
+categories:
   - Java
-tags : 
+tags:
   - HashMap
   - LinkedHashMap
 ---

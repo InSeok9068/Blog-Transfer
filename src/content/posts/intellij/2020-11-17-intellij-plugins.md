@@ -1,5 +1,5 @@
 ---
-title: "[IntelliJ] 유용한 플러그인"
+title: '[IntelliJ] 유용한 플러그인'
 categories:
   - IntelliJ
 ---

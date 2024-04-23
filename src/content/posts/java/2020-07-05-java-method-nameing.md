@@ -1,5 +1,5 @@
 ---
-title: "[Java] Method명 작성시 전치사 활용"
+title: '[Java] Method명 작성시 전치사 활용'
 categories:
   - Java
 tags:

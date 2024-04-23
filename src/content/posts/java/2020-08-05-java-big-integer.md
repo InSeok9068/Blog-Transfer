@@ -1,8 +1,8 @@
 ---
-title: "[Java] BigInteger를 통해 무한대 정수 사용하기"
-categories: 
+title: '[Java] BigInteger를 통해 무한대 정수 사용하기'
+categories:
   - Java
-tags : 
+tags:
   - int
   - BingInteger
 ---
@@ -117,15 +117,17 @@ public class BigIntegerVO {
 ### 결과
 
 #### /integer
-```html
-Whitelabel Error Page
-This application has no explicit mapping for /error, so you are seeing this as a fallback.
 
-Wed Aug 05 11:12:33 KST 2020
-There was an unexpected error (type=Internal Server Error, status=500).
-Error attempting to get column 'INTEGER' from result set. Cause: org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column [22004-200] ; Numeric value out of range: "11111111111111111" in column [22004-200]; nested exception is org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column [22004-200]
-org.springframework.dao.DataIntegrityViolationException: Error attempting to get column 'INTEGER' from result set.  Cause: org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column  [22004-200]
-; Numeric value out of range: "11111111111111111" in column  [22004-200]; nested exception is org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column  [22004-200]
+```html
+Whitelabel Error Page This application has no explicit mapping for /error, so you are seeing this as a fallback. Wed Aug
+05 11:12:33 KST 2020 There was an unexpected error (type=Internal Server Error, status=500). Error attempting to get
+column 'INTEGER' from result set. Cause: org.h2.jdbc.JdbcSQLDataException: Numeric value out of range:
+"11111111111111111" in column [22004-200] ; Numeric value out of range: "11111111111111111" in column [22004-200];
+nested exception is org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column
+[22004-200] org.springframework.dao.DataIntegrityViolationException: Error attempting to get column 'INTEGER' from
+result set. Cause: org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column
+[22004-200] ; Numeric value out of range: "11111111111111111" in column [22004-200]; nested exception is
+org.h2.jdbc.JdbcSQLDataException: Numeric value out of range: "11111111111111111" in column [22004-200]
 ```
 
 #### /bigInteger

@@ -1,8 +1,8 @@
 ---
-title: "[SpringBoot] @Deprecated 어노테이션으로 해당 클래스 및 메서드 은퇴시키기"
-categories: 
+title: '[SpringBoot] @Deprecated 어노테이션으로 해당 클래스 및 메서드 은퇴시키기'
+categories:
   - SpringBoot
-tags : 
+tags:
   - Deprecated
 ---
 
@@ -41,7 +41,7 @@ public class DeprecatedClass {
 ~~DeprecatedClass~~ objDeprecatedClass = new ~~DeprecatedClass~~();
 
 ```
-@Deprecated 
+@Deprecated
 public class DeprecatedClass
 extends Object
 Deprecated

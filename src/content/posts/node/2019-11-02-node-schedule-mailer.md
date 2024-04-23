@@ -1,8 +1,8 @@
 ---
-title: "[Node] Node로 정해진 시간마다 이메일 전송(Schedule, Mailer 사용)"
-categories: 
+title: '[Node] Node로 정해진 시간마다 이메일 전송(Schedule, Mailer 사용)'
+categories:
   - Node
-tags : 
+tags:
   - node-schedule
   - nodemailer
 ---
@@ -19,16 +19,17 @@ exprees 서버를 작성해보자.<br>
 아래와 같이 app.js를 작성하고
 
 ### app.js
+
 ```js
-var express = require("express");
+var express = require('express');
 var app = express();
 
-app.get("/", function(req, res) {
-  res.send("Hello World!");
+app.get('/', function (req, res) {
+  res.send('Hello World!');
 });
 
-app.listen(3000, function() {
-  console.log("Example app listening on port 3000!");
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
 });
 ```
 
@@ -62,8 +63,8 @@ Cron-style로 시간을 나타낼수 있으면 하나의 예제를 작성해보�
 
 ```js
 // 5초 간격으로 실행되는게 아닌 5초에 실행한다.
-var j = schedule.scheduleJob("5 * * * * *", function() {
-  console.log("매분 5초마다 등장");
+var j = schedule.scheduleJob('5 * * * * *', function () {
+  console.log('매분 5초마다 등장');
 });
 ```
 
@@ -91,48 +92,48 @@ Gmail을 이용하여 메일을 보낼건데 gmail 보안이 낮은 앱 허용 �
 ```js
 var mailSender = {
   // 메일발송 함수
-  sendGmail: function(param) {
+  sendGmail: function (param) {
     var transporter = mailer.createTransport({
-      service: "gmail",
+      service: 'gmail',
       prot: 587,
-      host: "smtp.gmlail.com",
+      host: 'smtp.gmlail.com',
       secure: false,
       requireTLS: true,
       auth: {
-        user: "보내는ID@gmail.com",
-        pass: "패스워드"
-      }
+        user: '보내는ID@gmail.com',
+        pass: '패스워드',
+      },
     });
     // 메일 옵션
     var mailOptions = {
-      from: "보내는ID@gmail.com",
+      from: '보내는ID@gmail.com',
       to: param.toEmail, // 수신할 이메일
       subject: param.subject, // 메일 제목
-      text: param.text // 메일 내용
+      text: param.text, // 메일 내용
     };
     // 메일 발송
-    transporter.sendMail(mailOptions, function(error, info) {
+    transporter.sendMail(mailOptions, function (error, info) {
       if (error) {
         console.log(error);
       } else {
-        console.log("Email sent: " + info.response);
+        console.log('Email sent: ' + info.response);
       }
     });
-  }
+  },
 };
 
 // 보내는 사람은 같아도 받을ID는 하나가 아니므로 따로 빼주었다.
 var emailParam = {
-  toEmail: "받은ID@gmail.com",
-  subject: "메일 테스트",
-  text: "메일 내용"
+  toEmail: '받은ID@gmail.com',
+  subject: '메일 테스트',
+  text: '메일 내용',
 };
 ```
 
 메일 설정 끝났으니 스케줄러에 정해진 시간마다 해당 함수가 실행되게 해보자
 
 ```js
-var j = schedule.scheduleJob("5 * * * * *", function() {
+var j = schedule.scheduleJob('5 * * * * *', function () {
   mailSender.sendGmail(emailParam);
 });
 ```

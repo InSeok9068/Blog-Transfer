@@ -1,8 +1,8 @@
 ---
-title: "[Java] 클린 코드 Try-With-Resources를 사용하자"
-categories: 
+title: '[Java] 클린 코드 Try-With-Resources를 사용하자'
+categories:
   - Java
-tags : 
+tags:
   - Exception
   - Try-With-Resources
 ---
@@ -16,6 +16,7 @@ Java를 사용하면서 입출력 로직이나 DB 커넥션을 통해 자원을 
 간단하게 두 개의 코드를 비교해보며 알아보자.
 
 ### Try-Catch-Finally
+
 ```java
 public static void main(String[] args) {
     FileOutputStream out = null;
@@ -37,6 +38,7 @@ public static void main(String[] args) {
 ```
 
 ### Try-With-Resources
+
 ```java
 public static void main(String[] args) {
     try(FileOutputStream out = new FileOutputStream("test.txt")) {

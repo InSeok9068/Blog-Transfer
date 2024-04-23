@@ -1,8 +1,8 @@
 ---
-title: "[SpringBoot] @RequestParam, @PathVariable 차이점"
-categories: 
+title: '[SpringBoot] @RequestParam, @PathVariable 차이점'
+categories:
   - SpringBoot
-tags : 
+tags:
   - RequestParam
   - PathVariable
 ---
@@ -22,12 +22,13 @@ tags :
 각자의 장단점이 있으며 두 개의 방식은 Spring에서 파라미터를 받는 방식이 조금 다르다.
 
 ### @RequestParam
+
 ```java
 @RestController
 public class TestController (){
 
   @GetMapping("/")
-  public String test(@RequestParam("userId") String userId, 
+  public String test(@RequestParam("userId") String userId,
                      @RequestParam("memo")   String memo){
 
     //아래와 같이 해당 변수에 파라미터값이 할당된다.
@@ -36,11 +37,12 @@ public class TestController (){
 
     return "TEST 성공"
   }
-  
+
 }
 ```
 
 ### @PathVariable
+
 ```java
 @RestController
 public class TestController (){
@@ -55,7 +57,7 @@ public class TestController (){
 
     return "TEST 성공"
   }
-  
+
 }
 ```
 
@@ -77,7 +79,7 @@ public class TestController (){
 
     return "TEST 성공"
   }
-  
+
 }
 ```
 

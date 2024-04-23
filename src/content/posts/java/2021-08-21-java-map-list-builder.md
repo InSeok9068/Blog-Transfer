@@ -1,5 +1,5 @@
 ---
-title: "[Java] Map, List 클래스 Builder 생성자 사용하여 생성하기"
+title: '[Java] Map, List 클래스 Builder 생성자 사용하여 생성하기'
 categories:
   - Java
 tags:

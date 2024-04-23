@@ -1,8 +1,8 @@
 ---
-title: "[MyBatis] 조건문 비교 숫자형 비교연산자"
-categories: 
+title: '[MyBatis] 조건문 비교 숫자형 비교연산자'
+categories:
   - Others
-tags : 
+tags:
   - MyBatis
 ---
 
@@ -24,9 +24,9 @@ XML 확장자 특성으로 볼수 있으며 이러한 현상을 해결하기 위
 
 아래와 같은 문자로 대신하여 사용한다면 오류를 해결할수있다.
 
-|기호 | 대체문자 | 예제                     |
-|:----|:--------|:-------------------------|
-| <   |  lt     |`<if test="intAge lt 0">` |
-| >   |  gt     |`<if test="intAge gt 0">` |
-| <=  |  lte    |`<if test="intAge lte 0">`|
-| >=  |  gte    |`<if test="intAge gte 0">`|
+| 기호 | 대체문자 | 예제                       |
+| :--- | :------- | :------------------------- |
+| <    | lt       | `<if test="intAge lt 0">`  |
+| >    | gt       | `<if test="intAge gt 0">`  |
+| <=   | lte      | `<if test="intAge lte 0">` |
+| >=   | gte      | `<if test="intAge gte 0">` |

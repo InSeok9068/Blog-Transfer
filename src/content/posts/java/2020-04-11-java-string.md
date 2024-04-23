@@ -1,8 +1,8 @@
 ---
-title: "[Java] String, StringBuffer, StringBuilder의 차이점"
-categories: 
+title: '[Java] String, StringBuffer, StringBuilder의 차이점'
+categories:
   - Java
-tags : 
+tags:
   - String
   - StringBuffer
   - StringBuilder
@@ -20,7 +20,8 @@ tags :
 
 어떤 상황에서 어떤 타입의 클래스를 사용해야지 효율적으로 메모리 관리를 할 수 있는지 알아보려 한다.
 
-### String 
+### String
+
 일단 우리가 가장 많이 쓰는 걸로 알고 있는 String 클래스이다.
 
 String 객체를 선언하면 JVM의 Heap 메모리에 생성이 되는데 여기서

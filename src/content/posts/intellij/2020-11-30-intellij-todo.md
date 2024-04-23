@@ -1,5 +1,5 @@
 ---
-title: "[IntelliJ] TODO 주석으로 할일 관리하기"
+title: '[IntelliJ] TODO 주석으로 할일 관리하기'
 categories:
   - IntelliJ
 tages:

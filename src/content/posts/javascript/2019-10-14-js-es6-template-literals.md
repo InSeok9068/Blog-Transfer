@@ -1,8 +1,8 @@
 ---
-title: "[Javasciprt] (ES6) Template Literals 활용 방법"
-categories: 
+title: '[Javasciprt] (ES6) Template Literals 활용 방법'
+categories:
   - Javascript
-tags : 
+tags:
   - es6
   - Template Literals
 ---
@@ -16,14 +16,14 @@ var a = 100;
 var b = 200;
 
 // 기존
-var str = "값 = " + (a+b);
+var str = '값 = ' + (a + b);
 
-console.log(str) // 값 = 300
+console.log(str); // 값 = 300
 
 // ES6
-var str = `값 = ${a+b}`
+var str = `값 = ${a + b}`;
 
-console.log(str) // 값 = 300
+console.log(str); // 값 = 300
 ```
 
 좀 더 간편하게 문자열을 표현 할 수 있다.

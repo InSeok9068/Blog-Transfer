@@ -1,5 +1,5 @@
 ---
-title: "[SpringBoot] 래퍼런스 한글 문서"
+title: '[SpringBoot] 래퍼런스 한글 문서'
 categories:
   - SpringBoot
 tags:
@@ -1802,7 +1802,7 @@ jar로 압축하고 내장된 HTTP 서버를 사용하면서 얻게되는 가장
 
 혹시나 IDE에서 프로젝트를 바로 불러올 수 없다면, 빌드 플러그인을 사용하여 IDE 메타태그를 생성할 수 있다. 메이븐에는 [이클립스](http://maven.apache.org/plugins/maven-eclipse-plugin/)와 [IDEA](http://maven.apache.org/plugins/maven-idea-plugin/)를 포함하고 있다; 그레들은 보다 [다양한 IDE들](http://www.gradle.org/docs/current/userguide/ide_support.html)을 지원한다.
 
-> 팁: 웹 애플리케이션을 실행하다 보면 종종 "Port already in use" 라는 에러를 접하게 될 것이다. STS 사용자는 ` Run`` 보다  `Relaunch``` 버튼을 사용하여 이미 존재하는 인스턴스를 종료하도록 할 수 있다.
+> 팁: 웹 애플리케이션을 실행하다 보면 종종 "Port already in use" 라는 에러를 접하게 될 것이다. STS 사용자는 `Run`` 보다 `Relaunch``` 버튼을 사용하여 이미 존재하는 인스턴스를 종료하도록 할 수 있다.
 
 ### 19.2. 패키징된 애플리케이션 실행<a name="패키징된 애플리케이션 실행"></a>
 
@@ -2147,7 +2147,7 @@ public class Config {
 
 #### 23.5.2. 스프링 환경에서 속성들을 YAML로 노출
 
-`YamlPropertySourceLoader` 클래스는 스프링 `Environment`의 ` PropertySource````처럼 외부의 YAML을 사용할 수 있다. 이는 YAML 속성들에 접근하기 위한 플레이스홀더 문법인  `@Value``` 애노테이션과 유사한 형태로 사용하는 것을 허용한다.
+`YamlPropertySourceLoader` 클래스는 스프링 `Environment`의 `PropertySource````처럼 외부의 YAML을 사용할 수 있다. 이는 YAML 속성들에 접근하기 위한 플레이스홀더 문법인 `@Value``` 애노테이션과 유사한 형태로 사용하는 것을 허용한다.
 
 #### 23.5.3. 다중 프로파일 YAML 문서
 
@@ -2168,7 +2168,7 @@ server:
     address: 192.168.1.120
 ```
 
-위의 예에서, `server.address` 속성이 `127.0.0.1`라면 ` development```` 속성이 활성화 상태다. 만약  `development`와`production`프로파일을 사용할 수 **없다면**, 속성값은`192.168.1.100```일 것이다.
+위의 예에서, `server.address` 속성이 `127.0.0.1`라면 `development```` 속성이 활성화 상태다. 만약 `development`와`production`프로파일을 사용할 수 **없다면**, 속성값은`192.168.1.100```일 것이다.
 
 #### 23.5.4. YAML 의 단점
 
@@ -3435,7 +3435,7 @@ com.mycorp.libx.autoconfigure.LibXWebAutoConfiguration
 
 #### 36.3.3. 특성(|프로퍼티) 조건
 
-` @ConditionalOnProperty```` 어노테이션은 스프링 환경 특성(|프로퍼티)에 따라 설정을 할 수 있도록 해준다.  `prefix`와`name`속성으로 체크해야할 특성을 명시한다. 존재하고`false`가 아닌 특성은 기본적으로(|설정 없이도|자동으로) 매치가 될 것이다. 상세하게 체크하고 싶다면 `havingValue`와`matchIfMssing``` 속성을 사용하면 된다.
+`@ConditionalOnProperty```` 어노테이션은 스프링 환경 특성(|프로퍼티)에 따라 설정을 할 수 있도록 해준다. `prefix`와`name`속성으로 체크해야할 특성을 명시한다. 존재하고`false`가 아닌 특성은 기본적으로(|설정 없이도|자동으로) 매치가 될 것이다. 상세하게 체크하고 싶다면 `havingValue`와`matchIfMssing``` 속성을 사용하면 된다.
 
 #### 36.3.4. 리소스 조건
 
@@ -6429,7 +6429,7 @@ myapp.jar
 0063       3452       3980
 ```
 
-위의 예를 살펴보면 `myapp.jar` 내에서 `0063`에 위치한 `A.class`를 어떻게 찾는 지 볼 수 있다. `myapp.jar` 내에서 ` B.class``는  `3452`와 `3980```위치해있다.
+위의 예를 살펴보면 `myapp.jar` 내에서 `0063`에 위치한 `A.class`를 어떻게 찾는 지 볼 수 있다. `myapp.jar` 내에서 `B.class``는 `3452`와 `3980```위치해있다.
 
 여기서 알 수 있는건, 외부의 jar에 접근하는 방식으로 내부의 엔트리들을 쉽게 읽어올 수 있다. 우리는 압축을 해제할 필요가 없고 모든 엔트리 데이터를 메모리에서 읽어올 필요도 없다.
 

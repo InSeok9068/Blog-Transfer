@@ -1,5 +1,5 @@
 ---
-title: "[Java] @JsonProperty와 @JsonNaming의 사용법"
+title: '[Java] @JsonProperty와 @JsonNaming의 사용법'
 categories:
   - Java
 tags:

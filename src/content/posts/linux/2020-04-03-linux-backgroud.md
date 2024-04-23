@@ -1,8 +1,8 @@
 ---
-title: "[Linux] Spring Boot Jar파일 Background 실행"
-categories: 
+title: '[Linux] Spring Boot Jar파일 Background 실행'
+categories:
   - Linux
-tags : 
+tags:
   - nohup
 ---
 
@@ -12,7 +12,7 @@ Spring Boot로 개발을 해서 배포를 하려면 Jar 파일을 실행시켜�
 
 개인적으로는 배포 시에는 로그 단계를 낮추기 위해서 따로 설정해 주었다.
 
-Linux 아래와 같이 입력해주면 Spring Boot가 실행된다. 
+Linux 아래와 같이 입력해주면 Spring Boot가 실행된다.
 
 ```
 java -jar -Dspring.profiles.active=prod REST-API-0.0.1-SNAPSHOT.jar

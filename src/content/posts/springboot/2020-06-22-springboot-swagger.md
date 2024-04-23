@@ -1,5 +1,5 @@
 ---
-title: "[SpringBoot] Swagger2로 Rest API 문서화 및 테스트 하기"
+title: '[SpringBoot] Swagger2로 Rest API 문서화 및 테스트 하기'
 categories:
   - SpringBoot
 tags:

@@ -1,6 +1,6 @@
 ---
-title: "[Jenkins] Ubuntu에서 Jenkins 설치하기"
-categories: 
+title: '[Jenkins] Ubuntu에서 Jenkins 설치하기'
+categories:
   - Jenkins
 tags:
   - Ubuntu

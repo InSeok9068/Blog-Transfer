@@ -1,8 +1,8 @@
 ---
-title: "[Java] 실행중인 Method Name 가져오기"
-categories: 
+title: '[Java] 실행중인 Method Name 가져오기'
+categories:
   - Java
-tags : 
+tags:
   - Method
   - Thread
 ---

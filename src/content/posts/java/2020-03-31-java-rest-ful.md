@@ -1,56 +1,56 @@
 ---
-title: "[Java] REST API GET,POST 통신 예제"
-categories: 
+title: '[Java] REST API GET,POST 통신 예제'
+categories:
   - Java
-tags : 
+tags:
   - restful
 ---
 
 ```java
 public String httpRestGetSend(String restURL, String queryParam, String methodType){
 	String result = null;
-	
+
 	HttpURLConnection conn = null;
 	BufferedReader in = null;
-	
+
 	try {
 		URL url = new URL(restURL + queryParam);
 		conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod(methodType);
 		conn.setConnectTimeout(1000 * 5);
-		
+
 		int responseCode = conn.getResponseCode();
-		
+
 				in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 				String inputLine;
 				StringBuffer response = new StringBuffer();
 				while ((inputLine = in.readLine()) != null) {
 						response.append(inputLine);
 				}
-				
+
 				result = response.toString();
-				
+
 	}catch(Exception e) {
 		e.printStackTrace();
 	}finally {
 		if(in != null) { try{ in.close(); }catch(Exception e) {} };
 		if(conn != null) { try{ conn.disconnect(); }catch(Exception e) {} }
 	}
-	
+
 	return result;
 }
 
 public String httpRestPostSend(String restURL, String queryParam, String methodType, Properties jsonParam) throws Exception{
 	String result = null;
-	
+
 	HttpURLConnection conn = null;
 	OutputStream os = null;
-	InputStream in = null;	
-	
-	try {			
+	InputStream in = null;
+
+	try {
 		ObjectMapper mapper = new ObjectMapper();
 		String json = mapper.writeValueAsString(jsonParam);
-		
+
 		URL url = new URL(restURL + queryParam);
 		conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("POST");
@@ -58,13 +58,13 @@ public String httpRestPostSend(String restURL, String queryParam, String methodT
 		conn.setDoInput(true);
 		conn.setConnectTimeout(1000 * 5);
 		conn.setRequestProperty("Content-Type", "application/json");
-		
+
 		os = conn.getOutputStream();
 		os.write(json.getBytes("UTF-8"));
-		
+
 		in = new BufferedInputStream(conn.getInputStream());
 		result = org.apache.commons.io.IOUtils.toString(in, "UTF-8");
-		
+
 	}catch(Exception e) {
 		e.printStackTrace();
 	}finally {
@@ -72,7 +72,7 @@ public String httpRestPostSend(String restURL, String queryParam, String methodT
 		if(in != null) { try{ in.close(); }catch(Exception e) {} };
 		if(conn != null) { try{ conn.disconnect(); }catch(Exception e) {} }
 	}
-	
+
 	return result;
 }
 
@@ -89,5 +89,5 @@ public String encodeString(Properties params) {
 			sb.append("&");
 	}
 	return sb.toString();
-}	
+}
 ```

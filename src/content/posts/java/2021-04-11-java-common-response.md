@@ -1,5 +1,5 @@
 ---
-title: "[Java] 공통 필드를 가진 Response 객체 두 가지 구현 법"
+title: '[Java] 공통 필드를 가진 Response 객체 두 가지 구현 법'
 categories:
   - Java
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "[IntelliJ] Build 시 Out Of Memory 대처법"
+title: '[IntelliJ] Build 시 Out Of Memory 대처법'
 categories:
   - IntelliJ
 ---

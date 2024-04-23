@@ -1,8 +1,8 @@
 ---
-title: "개발언어별 의존성 관리도구"
-categories: 
+title: '개발언어별 의존성 관리도구'
+categories:
   - Others
-tags : 
+tags:
   - java
   - node
   - python
@@ -14,6 +14,7 @@ Java, Node, Python을 사용하여 개발을 진행하다 보면 적재적소에
 각 언어별로 대표적인 관리도구를 소개해주려한다.
 
 ### Java
+
 **Maven**
 
 ```xml
@@ -27,6 +28,7 @@ Java, Node, Python을 사용하여 개발을 진행하다 보면 적재적소에
 <https://mvnrepository.com/> 해당 URL을 통해 원하는 버전과 라이브러리를 찾을 수 있다.
 
 ### Node
+
 **NPM**
 
 ```shell
@@ -36,6 +38,7 @@ $ npm install 라이브러리
 <https://www.npmjs.com/> 해당 URL을 통해 원하는 버전과 라이브러리를 찾을 수 있다.
 
 ### Python
+
 **PIP**
 
 ```shell

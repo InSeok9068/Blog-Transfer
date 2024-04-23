@@ -1,5 +1,5 @@
 ---
-title: "[Java] 라이브러리 상수 변수 사용하기 (지속적 업데이트 예정)"
+title: '[Java] 라이브러리 상수 변수 사용하기 (지속적 업데이트 예정)'
 categories:
   - Java
 tags:

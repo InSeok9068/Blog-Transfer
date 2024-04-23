@@ -1,6 +1,6 @@
 ---
-title: "[Javasciprt] 변수 접근자 var, let, const 차이"
-categories: 
+title: '[Javasciprt] 변수 접근자 var, let, const 차이'
+categories:
   - Javascript
 ---
 
@@ -15,40 +15,40 @@ ES6로 버전이 올라가면서 **let, const** 사용을 권장한다.
 간단하게 코드로 설명드리겠습니다.
 
 ```javascript
-if(true){
-    var val = 1
-    console.log(val) // 1
+if (true) {
+  var val = 1;
+  console.log(val); // 1
 }
 
-console.log(val) // 1
+console.log(val); // 1
 
-val = 2
+val = 2;
 
-console.log(val) // 2
+console.log(val); // 2
 ```
 
 ```javascript
-if(true){
-    const val = 1
-    console.log(val) // 1
+if (true) {
+  const val = 1;
+  console.log(val); // 1
 }
 
-console.log(val) // 1
+console.log(val); // 1
 
-val = 2 // Assignment to constant variable.
+val = 2; // Assignment to constant variable.
 
-console.log(val) // 1
+console.log(val); // 1
 ```
 
 **const 와 var** 의 차이점은 const는 상수와 같이 한번 선언되면 재할당이 불가능합니다.
 
 ```javascript
-if(true){
-    let val = 1
-    console.log(val) // 1
+if (true) {
+  let val = 1;
+  console.log(val); // 1
 }
 
-console.log(val) // val is not defined
+console.log(val); // val is not defined
 ```
 
 **let**은 보시다 시피 블록 스코프안에서만 유효한 변수가 됩니다.

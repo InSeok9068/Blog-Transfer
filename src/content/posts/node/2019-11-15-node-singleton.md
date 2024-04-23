@@ -1,6 +1,6 @@
 ---
-title: "[Node] 간단한 예제로 알아보는 Node 싱글톤"
-categories: 
+title: '[Node] 간단한 예제로 알아보는 Node 싱글톤'
+categories:
   - Node
 tag:
   - singleton
@@ -14,7 +14,6 @@ tag:
 
 간단한 예제를 살펴보겠다.
 
-
 다른 곳에서 사용할 수 있게 인스턴스를 모듈화해서 하나 만들어줍니다.
 
 #### plus.js
@@ -23,9 +22,9 @@ tag:
 let value = 0;
 
 module.exports = {
-  plus : () => value++,
-  get  : () => value
-}
+  plus: () => value++,
+  get: () => value,
+};
 ```
 
 해당 인스턴스를 가져와 객체를 생성해줍니다.
@@ -35,7 +34,7 @@ module.exports = {
 #### plusApp.js
 
 ```js
-const plusApp = require("./plus");
+const plusApp = require('./plus');
 
 plusApp.plus();
 plusApp.plus();
@@ -48,8 +47,8 @@ console.log(plusApp.get()); // 2
 #### sington.js
 
 ```js
-const plusApp1 = require("./plus");
-const plusApp2 = require("./plus");
+const plusApp1 = require('./plus');
+const plusApp2 = require('./plus');
 
 plusApp1.plus();
 plusApp1.plus();

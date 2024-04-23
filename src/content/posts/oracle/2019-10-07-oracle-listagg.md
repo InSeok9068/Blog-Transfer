@@ -1,10 +1,10 @@
 ---
-title: "[Oracle] 그룹으로 문자열 이어쓰기 (LISTAGG 함수)"
-categories: 
+title: '[Oracle] 그룹으로 문자열 이어쓰기 (LISTAGG 함수)'
+categories:
   - Oracle
 ---
 
-``` sql
+```sql
 SELECT
   NAME,
   LISTAGG(COMENT, ',') WITHIN GROUP (ORDER BY NAME) COMENT
@@ -20,10 +20,11 @@ FROM
    FROM DUAL)
 GROUP BY NAME;
 ```
+
 ---
 
-| NAME | COMENT        |
-|:-----|:--------------|
-|홍길동 |테스트1,테스트2 |
+| NAME   | COMENT          |
+| :----- | :-------------- |
+| 홍길동 | 테스트1,테스트2 |
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "[Oracle] DEFINE으로 쿼리 실행 시 변수 선언하기"
+title: '[Oracle] DEFINE으로 쿼리 실행 시 변수 선언하기'
 categories:
   - Oracle
   - DEFINE

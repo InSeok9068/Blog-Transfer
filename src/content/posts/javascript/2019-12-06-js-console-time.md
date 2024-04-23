@@ -1,8 +1,8 @@
 ---
-title: "[Javasciprt] (console.time,console.timeEnd)로 코드 실행시간 파악하기 "
-categories: 
+title: '[Javasciprt] (console.time,console.timeEnd)로 코드 실행시간 파악하기 '
+categories:
   - Javascript
-tags : 
+tags:
   - console.time
   - console.timeEnd
 ---
@@ -25,9 +25,9 @@ tags :
 
 ```js
 // 십억개의 for문을 돌려 time을 구분하여 보겠다.
-console.time("A");
+console.time('A');
 for (let i = 0; i < 1000000000; i++) {}
-console.timeEnd("A");
+console.timeEnd('A');
 
 // A: 674.370ms
 ```

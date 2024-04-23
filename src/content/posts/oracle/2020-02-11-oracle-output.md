@@ -1,8 +1,8 @@
 ---
-title: "[Oracle] 프로시저 결과 및 값을 출력 DBMS_OUTPUT"
-categories: 
+title: '[Oracle] 프로시저 결과 및 값을 출력 DBMS_OUTPUT'
+categories:
   - Oracle
-tag :
+tag:
   - output
 ---
 
@@ -19,7 +19,6 @@ END;
 ```
 
 DBMS_OUTPUT 창에 **출력 확인** 이란 메시지가 뜨는지 확인해보면 된다.
-
 
 하나의 예시로 INSERT도 중 에러가 발생했을 때 어떠한 값 때문에 에러가 발생했는지 볼 수 있다.
 
@@ -39,7 +38,7 @@ BEGIN
     변수2,
     변수3
   );
-  EXCEPTION 
+  EXCEPTION
   WHEN OTHERS THEN
       OUT_MSG := 'INSERT 중 오류 발생.(테이블명)-'|| 변수1 || '-' || 변수2 ||'-'|| 변수3 ||'-'||SQLERRM;
       DBMS_OUTPUT.PUT_LINE(OUT_MSG);

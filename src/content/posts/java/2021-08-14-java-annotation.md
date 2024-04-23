@@ -1,5 +1,5 @@
 ---
-title: "[Java] 유용한 어노테이션 정리"
+title: '[Java] 유용한 어노테이션 정리'
 categories:
   - Java
 tags:

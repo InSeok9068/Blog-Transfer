@@ -1,8 +1,8 @@
 ---
-title: "[Javasciprt] Chrome 개발자 도구 간단 코딩"
-categories: 
+title: '[Javasciprt] Chrome 개발자 도구 간단 코딩'
+categories:
   - Javascript
-tags : 
+tags:
   - chrome
 ---
 

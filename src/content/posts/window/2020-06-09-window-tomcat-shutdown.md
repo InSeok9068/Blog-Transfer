@@ -1,8 +1,8 @@
 ---
-title: "[Window] Window에서 특정 포트 Kill 시키기"
-categories: 
+title: '[Window] Window에서 특정 포트 Kill 시키기'
+categories:
   - Window
-tags : 
+tags:
   - Tomcat
 ---
 

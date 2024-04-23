@@ -1,5 +1,5 @@
 ---
-title: "[Chrome] 개발문서 및 개발 블로그 읽을 때 편리한 단축키"
+title: '[Chrome] 개발문서 및 개발 블로그 읽을 때 편리한 단축키'
 categories:
   - Others
 tags:

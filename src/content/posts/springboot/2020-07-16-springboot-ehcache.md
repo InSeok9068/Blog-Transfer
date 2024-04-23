@@ -1,8 +1,8 @@
 ---
-title: "[SpringBoot] EhCache 사용하여 DB 과부화 줄이기"
-categories: 
+title: '[SpringBoot] EhCache 사용하여 DB 과부화 줄이기'
+categories:
   - SpringBoot
-tags : 
+tags:
   - EhCache
 ---
 
@@ -80,7 +80,7 @@ spring.cache.ehcache.config=classpath:ehcache.xml
            maxEntriesLocalDisk="1000"
            eternal="false"
            diskSpoolBufferSizeMB="20"
-           timeToIdleSeconds="300" 
+           timeToIdleSeconds="300"
            timeToLiveSeconds="600"
            memoryStoreEvictionPolicy="LFU"
            transactionalMode="off">
@@ -92,18 +92,18 @@ spring.cache.ehcache.config=classpath:ehcache.xml
 
 ##### 설정값
 
-| 속성                             | 설명                                                                                                        | Default |
-|:---------------------------------|:-----------------------------------------------------------------------------------------------------------|:--------|
-| name                             | 코드에서 사용할 캐시 name                                                                                   | 필수     |
-| maxEntriesLocalHeap              | 메모리에 생성 될 최대 캐시 갯수                                                                              | 0       |
-| maxEntriesLocalDisk              | 스크에 생성 될 최대 캐시 갯수                                                                                | 0       |
-| eternal                          | 영속성 캐시 설정 (지워지는 캐시인지?) external = "true"이면 timeToIdleSecond, timeToLiveSeconds 설정이 무시됨  | false   |
-| timeToIdleSecond                 | 해당 초동안 캐시가 호출 되지 않으면 삭제                                                                      | 0       |
-| timeToLiveSeconds                | 해당 초가 지나면 캐시가 삭제                                                                                 | 0       |
-| overflowToDisk                   | 오버플로우 된 항목에 대해 disk에 저장할 지 여부                                                               | false   |
-| diskPersistent                   | 캐시를 disk에 저장하여, 서버 로드 시 캐시를 말아 둘지 설정                                                     | false   |
-| diskExpiryThreadIntervalSeconds  | Disk Expiry 스레드의 작업 수행 간격 설정                                                                     | 0       |
-| memoryStoreEvictionPolicy        | 캐시의 객체 수가 maxEntriesLocalHeap에 도달하면, 객체를 추가하고 제거하는 정책 설정<br>LRU : 가장 오랫동안 호출 되지 않은 캐시를 삭제<br>LFU : 호출 빈도가 가장 적은 캐시를 삭제<br>FIFO : First In First Out 캐시가 생성된 순서대로 가장 오래된 캐시를 삭제| LRU |
+| 속성                            | 설명                                                                                                                                                                                                                                                         | Default |
+| :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
+| name                            | 코드에서 사용할 캐시 name                                                                                                                                                                                                                                    | 필수    |
+| maxEntriesLocalHeap             | 메모리에 생성 될 최대 캐시 갯수                                                                                                                                                                                                                              | 0       |
+| maxEntriesLocalDisk             | 스크에 생성 될 최대 캐시 갯수                                                                                                                                                                                                                                | 0       |
+| eternal                         | 영속성 캐시 설정 (지워지는 캐시인지?) external = "true"이면 timeToIdleSecond, timeToLiveSeconds 설정이 무시됨                                                                                                                                                | false   |
+| timeToIdleSecond                | 해당 초동안 캐시가 호출 되지 않으면 삭제                                                                                                                                                                                                                     | 0       |
+| timeToLiveSeconds               | 해당 초가 지나면 캐시가 삭제                                                                                                                                                                                                                                 | 0       |
+| overflowToDisk                  | 오버플로우 된 항목에 대해 disk에 저장할 지 여부                                                                                                                                                                                                              | false   |
+| diskPersistent                  | 캐시를 disk에 저장하여, 서버 로드 시 캐시를 말아 둘지 설정                                                                                                                                                                                                   | false   |
+| diskExpiryThreadIntervalSeconds | Disk Expiry 스레드의 작업 수행 간격 설정                                                                                                                                                                                                                     | 0       |
+| memoryStoreEvictionPolicy       | 캐시의 객체 수가 maxEntriesLocalHeap에 도달하면, 객체를 추가하고 제거하는 정책 설정<br>LRU : 가장 오랫동안 호출 되지 않은 캐시를 삭제<br>LFU : 호출 빈도가 가장 적은 캐시를 삭제<br>FIFO : First In First Out 캐시가 생성된 순서대로 가장 오래된 캐시를 삭제 | LRU     |
 
 ---
 
@@ -205,9 +205,9 @@ public class EmpServiceImpl implements EmpService {
 ```
 
 ```console
-20200716 16:17:11.951 [http-nio-8080-exec-3] INFO c.e.d.t.w.TestController - Cache 수행시간 : 2002 
-20200716 16:17:15.582 [http-nio-8080-exec-4] INFO c.e.d.t.w.TestController - Cache 수행시간 : 0 
-20200716 16:17:23.206 [http-nio-8080-exec-5] INFO c.e.d.t.w.TestController - NoCache 수행시간 : 2007 
+20200716 16:17:11.951 [http-nio-8080-exec-3] INFO c.e.d.t.w.TestController - Cache 수행시간 : 2002
+20200716 16:17:15.582 [http-nio-8080-exec-4] INFO c.e.d.t.w.TestController - Cache 수행시간 : 0
+20200716 16:17:23.206 [http-nio-8080-exec-5] INFO c.e.d.t.w.TestController - NoCache 수행시간 : 2007
 ```
 
 위와 같은 Console 창의 결과를 보면
@@ -227,10 +227,10 @@ public class EmpServiceImpl implements EmpService {
 내가 생각한 몇 가지 고려 사항을 정리해보면
 
 - 자주 변경되는 데이터일수록 Cache 적용 신중하게 선택해야 한다.
-  + 데이터의 무결성이 깨질 염려가 있다.
+
+  - 데이터의 무결성이 깨질 염려가 있다.
 
 - 데이터 조회 여러 곳에 Cache를 적용하려면 ImMemory에 쌓이는 Memory 양도 생각해야 한다.
-  + 이 부분은 Cache의 생명주기를 어떻게 설정하느냐에 따라 극복할 수도 있다고 생각한다.
-
+  - 이 부분은 Cache의 생명주기를 어떻게 설정하느냐에 따라 극복할 수도 있다고 생각한다.
 
 자신이 만드는 서비스의 특성을 잘 파악하여 사용한다면 사용자에게 좀 더 쾌적한 환경의 서비스를 제공할 수 있다고 생각한다.

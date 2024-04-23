@@ -1,11 +1,10 @@
 ---
-title: "[Git] GitHub 저장소와 로컬 프로젝트 연결"
-categories: 
+title: '[Git] GitHub 저장소와 로컬 프로젝트 연결'
+categories:
   - Others
-tags : 
+tags:
   - git
 ---
-
 
 ### …or create a new repository on the command line
 

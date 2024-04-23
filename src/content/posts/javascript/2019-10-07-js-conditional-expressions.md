@@ -1,6 +1,6 @@
 ---
-title: "[Javasciprt] 삼항 연산자"
-categories: 
+title: '[Javasciprt] 삼항 연산자'
+categories:
   - Javascript
 ---
 
@@ -8,12 +8,12 @@ categories:
 
 사용법은 다음과 같다.
 
-``` javascript
+```javascript
 const isTrue = true;
 
-const result = (isTrue) ? "진실":"거짓";
+const result = isTrue ? '진실' : '거짓';
 
-console.log(result) // 진실
+console.log(result); // 진실
 ```
 
 자바와 자바스크립트 둘다 문법은 다르지 않다.

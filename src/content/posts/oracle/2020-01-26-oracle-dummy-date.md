@@ -1,8 +1,8 @@
 ---
-title: "[Oracle] 날짜 Dummy 데이터 만들기"
-categories: 
+title: '[Oracle] 날짜 Dummy 데이터 만들기'
+categories:
   - Oracle
-tag :
+tag:
   - date
 ---
 
@@ -17,7 +17,7 @@ CONNECT BY
   LEVEL <= ROUND( TO_DATE(종료일자, 'YYYYMMDD') - TO_DATE(시작날짜, 'YYYYMMDD') +1)
 ```
 
-#### 예시 
+#### 예시
 
 ```sql
 SELECT TO_CHAR( TO_DATE('20200101', 'YYYYMMDD') + ROWNUM-1, 'YYYYMMDD') AS DAY
@@ -28,15 +28,15 @@ CONNECT BY
 
 #### SQL 결과
 
-| DAY     |
-|:--------|
-|20200101 |
-|20200102 |
-|20200103 |
-|20200104 |
-|20200105 |
-|20200106 |
-|20200107 |
-|20200108 |
-|20200109 |
-|20200110 |
+| DAY      |
+| :------- |
+| 20200101 |
+| 20200102 |
+| 20200103 |
+| 20200104 |
+| 20200105 |
+| 20200106 |
+| 20200107 |
+| 20200108 |
+| 20200109 |
+| 20200110 |

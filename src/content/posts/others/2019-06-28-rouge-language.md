@@ -1,12 +1,13 @@
 ---
-title: "Rouge가 지원하는 언어 목록"
-categories: 
+title: 'Rouge가 지원하는 언어 목록'
+categories:
   - Others
 ---
+
 ### 지원 언어 목록
 
 [Rouge Wiki 참조](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)
- 
+
 - actionscript, as, as3
 - apache
 - apiblueprint, apib

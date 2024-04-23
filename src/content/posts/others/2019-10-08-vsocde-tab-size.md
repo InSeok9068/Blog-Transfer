@@ -1,8 +1,8 @@
 ---
-title: "[VSCODE] Tab 사이즈 변경"
-categories: 
+title: '[VSCODE] Tab 사이즈 변경'
+categories:
   - Others
-tags : 
+tags:
   - vscode
 ---
 
@@ -12,5 +12,5 @@ VSCODE로 개발을 하던 도중 뭘 만졌는지 모르겠지만 어느순간 
 
 ![IMAGE1](/assets/images/post/2019-10-08-vsocde-tab-size-image1.PNG)
 
-VSCODE의 오른쪽 아래 부분의 Space란을 클릭하면 
+VSCODE의 오른쪽 아래 부분의 Space란을 클릭하면
 Tab사이즈를 조정 할 수 있다.

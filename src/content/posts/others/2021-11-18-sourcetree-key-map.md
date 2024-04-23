@@ -1,5 +1,5 @@
 ---
-title: "[SourceTree] 단축키"
+title: '[SourceTree] 단축키'
 categories:
   - Others
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "[SpringBoot] @Valid로 유효성 검사하기"
+title: '[SpringBoot] @Valid로 유효성 검사하기'
 categories:
   - SpringBoot
 tags:

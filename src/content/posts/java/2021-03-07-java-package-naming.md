@@ -1,5 +1,5 @@
 ---
-title: "[Java] 패키지 명명 규칙"
+title: '[Java] 패키지 명명 규칙'
 categories:
   - Java
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "[SpringBoot] 특정 URL만 다른 Encoding 방식 설정하기"
+title: '[SpringBoot] 특정 URL만 다른 Encoding 방식 설정하기'
 categories:
   - SpringBoot
 tags:

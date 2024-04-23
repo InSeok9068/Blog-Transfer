@@ -1,10 +1,10 @@
 ---
-title: "[Oracle] Date 타입 문자열과 비교 시 고려 사항"
-categories: 
+title: '[Oracle] Date 타입 문자열과 비교 시 고려 사항'
+categories:
   - Oracle
-tag :
+tag:
   - Date
-published : false
+published: false
 ---
 
 오늘 포스팅을 알아보기 전 한 가지 전제 조건으로 오라클의 기본 Date 포맷은 'YY/MM/DD'로 생각하고 포스팅을 진행할 예정이다.
@@ -23,4 +23,3 @@ published : false
 필요한 필드에 따라서 두 가지를 상황에 맞게 사용하는 경우가 많을 거라 생각한다.
 
 두 가지 값을 교차해서 조건을 거는 경우가 있을텐데 일단 예시를 하나 들어보자.
-
