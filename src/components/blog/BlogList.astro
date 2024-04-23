@@ -11,7 +11,7 @@ interface Props {
 const { title, image, url } = Astro.props;
 ---
 
-<div class="card bg-base-100 shadow-xl lg:card-side">
+<div class="card w-1/2 bg-base-100 shadow-xl lg:card-side">
   <figure>
     <Image src={image! ?? defaultBlogImage} alt="Album" width="200" height="200" />
   </figure>
