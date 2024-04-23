@@ -2,10 +2,9 @@
 import BlogList from '@/components/blog/BlogList.astro';
 import Layout from '@/layouts/Layout.astro';
 import { getPackageTitle } from '@/utils/package';
-import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
-
-// export const prerender = true;
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+import Pagination from '@/components/Pagination.astro';
 
 export const getStaticPaths = (async ({ paginate }) => {
   const blogEntries = await getCollection('posts');
@@ -22,10 +21,6 @@ const currentPage = page.currentPage ?? 1;
   <div class="flex flex-col items-center gap-10">
     <p class="font-mono text-3xl">Blog List</p>
     {page.data.map((post) => <BlogList title={post.data.title} url={`/posts/${post.slug}/`} />)}
-    <div class="join">
-      <a class="btn join-item" href={page.url.prev}>«</a>
-      <a class="btn join-item">{currentPage}</a>
-      <a class="btn join-item" href={page.url.next}>»</a>
-    </div>
+    <Pagination currentPage={currentPage} preUrl={page.url.prev} nextUrl={page.url.next} />
   </div>
 </Layout>

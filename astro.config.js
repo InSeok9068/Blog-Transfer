@@ -8,6 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://inseok9068.github.io',
   integrations: [tailwind(), sitemap()],
   vite: {
     resolve: {
